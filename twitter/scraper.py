@@ -5,7 +5,7 @@ import snscrape.modules.twitter as twitter
 data_path = r"C:\Users\cdegu\OneDrive\Documents\BMO 2020\Election-Opinion-Mining\twitter\data"
 end_date = datetime.datetime(2016, 9, 1, 0, 0, tzinfo = datetime.timezone.utc)
 
-"""
+
 # Scrape user list
 users = [
     "realDonaldTrump",
@@ -27,6 +27,7 @@ for user in users:
             print(tweet.content)
             print(tweet.date)
             print("From: " + tweet.username)
+            print("Count: " + str(i))
             print("-" * 15)
 
 
@@ -64,4 +65,4 @@ for key_word in KEY_WORDS:
         pickle.dump(key_word_tweets, file)
     
 
-
+"""
