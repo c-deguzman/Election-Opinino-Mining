@@ -24,7 +24,7 @@ for user in users:
         row_data.append([tweet.date, tweet.content, " ".join(mentions), tweet.likeCount, tweet.replyCount, tweet.retweetCount])
 
     tweet_df = pandas.DataFrame(row_data, columns = [ 'date', 'tweet_content', 'user_mentions', 'like_count', 'reply_count', 'retweet_count'])
-    tweet_df.to_pickle( data_path + "/users/" + user + "_df.pkl")
+    tweet_df.to_pickle( data_path + "/users/" + user + "_df.pkl", protocol=4)
         
         
 
