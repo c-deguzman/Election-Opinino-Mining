@@ -110,7 +110,7 @@ def utils_preprocess_text(text, flg_stemm=False, flg_lemm=True, lst_stopwords=No
     return text
     
 
-data_path = r"C:\Users\cdegu\OneDrive\Documents\BMO 2020\Election-Opinion-Mining\twitter\data"
+data_path = r".\data"
 
 key_words = ["Trump", "Republicans", "Democrats"]
 
